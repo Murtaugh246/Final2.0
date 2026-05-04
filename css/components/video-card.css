@@ -1,0 +1,46 @@
+
+
+.home-video-card {
+  position: absolute;
+  bottom: 50px;
+  left: 44%;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 28px;
+  width: min(350px, 42vw);
+  padding: 22px;
+  transform: translateX(-25%);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.6);
+}
+.home-video-card__media,
+.home-video-card__media video,
+.home-video-card__media iframe {
+  width: 100%;
+  border-radius: 18px;
+  margin-top: 4%;
+}
+.home-video-card__note {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.86);
+}
+.home-video-card__placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 280px;
+  border-radius: 18px;
+  border: 1px dashed rgba(255,255,255,0.28);
+  background: rgba(0,0,0,0.22);
+  padding: 24px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .home-video-card {
+    position: static;
+    transform: none;
+    width: min(700px, 100%);
+  }
+}

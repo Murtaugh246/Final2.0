@@ -1,0 +1,128 @@
+.assignments-stack {
+  display: grid;
+  gap: 16px;
+}
+
+.assignment-card {
+  border-radius: 40px;
+  padding: 40px;
+  display: grid;
+  gap: 10px;
+  background-size: cover;
+  transition: box-shadow 0.2s ease, opacity 0.2s ease;
+}
+.assignment-card:hover {
+  box-shadow: 10px 5px 5px black;
+  opacity: 75%;
+}
+
+.me-stack {
+  display: grid;
+  gap: 25px;
+}
+.me-card {
+  border-radius: 40px;
+  padding: 40px;
+  display: grid;
+  gap: 10px;
+  background-size: cover;
+  transition: box-shadow 0.2s ease, opacity 0.2s ease;
+}
+.me-card:hover {
+  box-shadow: 10px 5px 5px black;
+  opacity: 75%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
