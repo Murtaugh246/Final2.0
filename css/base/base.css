@@ -1,0 +1,121 @@
+/* site wide settings */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: vh;
+  font-family: ;
+  color: ;
+  background-color: ;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+/* BACKGROUND IMAGES */
+.page {							
+  min-height: 100vh;
+}
+/* index.html */
+.page--index {
+  background-image: url("../content/images/index/texture.jpg");
+  background-size: contain; 
+  background-repeat: repeat; 
+  background-position: bottom center;
+}
+
+
+
+
+
+
+/*  background-image: url("../content/images/index/void1.png"), url("../content/images/index/rain.jpg"); 
+  background-size: 500px 767px, cover; 
+  background-repeat: no-repeat, repeat; 
+  background-position: top center, bottom center;
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
