@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Final Project</title>
+    <link rel="stylesheet" href="./css/main.css">	<!--main.css imports the styling pages from the 7-1 folders-->
+  </head>
+   
+  <body class="page page--index">  	<!--references the background images in base.css-->
+
+    <main class="index-shell">   <!--container for central content the user came here to see/ references layout/shell.css for structure-->
+	
+	  <!--Grid-->
+      <section class="index-assignments assignments-stack" 
+	           aria-label="class assignments"
+	    >	<!--content grouping container for grid/ class references shell.css and cards.css/ accessibility label-->
+		
+		<!--Movie Review Page-->  
+		<article class="assignment-card card-movie">	<!--object container/ class references cards.css and index.css-->
+          <a class="ac_button ac_button--movie" 
+		     href="./mvrv.html"
+			 >See Page
+		  </a>		<!--references buttons.css-->
+        </article>
+		
+		<!--Resume Page-->
+        <article class="assignment-card card-resume">
+          <a class="ac_button ac_button--resume" 
+		     href="./resume.html"
+			 >See Page
+		    </a>
+          </article>
+		  
+		<!--Blog Card-->
+        <article class="assignment-card card-blog">
+          <a class="ac_button ac_button--blog" 
+		     href="./blog.html"
+			 >See Page
+		    </a>
+        </article>
+		
+		<!--Party Card-->
+        <article class="assignment-card card-party">
+          <a class="ac_button ac_button--party" 
+		     href="./party.html"
+			 >See Page
+		    </a>
+          </article>
+		  
+		<!--Grid Card-->
+        <article class="assignment-card card-grid">
+          <a class="ac_button ac_button--grid" 
+		     href="./grid.html"
+			 >See Page
+		    </a>
+        </article>
+      </section>
+
+	  <!--About Me-->
+      <a href="./me.html"
+	    >
+        <img class="card-me"
+		  />
+        </a>
+		
+	  <!--Contact Me-->
+      <a href="./contact.html"
+	    >
+        <img class="card-contact"
+		  />
+        </a>
+		
+	  <!--Creative Page-->
+      <a href="./creative.html"
+	    >
+        <img class="card-create"
+		  />
+        </a>
+
+	<!--Video-->
+      <section class="home-video-card" 
+	           aria-label="featured-video-title"
+	    >
+        <div
+          id="portfolio-video"
+          class="home-video-card__media"
+          data-video-src="./css/content/videos/final.MOV"
+		  >
+          </div>
+		  
+        <p class="home-video-card__note">
+		  </p>
+      </section>  
+	</main>
+
+    <script>
+      const container = document.getElementById("portfolio-video");
+
+      if (container) {
+        const src = container.dataset.videoSrc;
+        const poster = container.dataset.poster;
+
+        // Create video element
+        const video = document.createElement("video");
+        video.controls = true;
+        video.preload = "metadata";
+        video.playsInline = true;
+
+        if (poster) {
+          video.poster = poster;
+        }
+
+        // Create source element
+        const source = document.createElement("source");
+        source.src = src;
+        source.type = "video/mp4";
+
+        video.appendChild(source);
+        container.appendChild(video);
+      }
+    </script>
+
+  </body>		  
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

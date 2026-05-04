@@ -1,0 +1,147 @@
+<!DOCTYPE css>
+
+/* Just to make it readable */
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  padding: 24px;
+  background: #f6f7fb;
+}
+
+
+/*back*/
+.back {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 10px;
+  top: 15px;
+  right: 150px;
+}
+.back:hover {
+  box-shadow: 5px 5px 5px black;
+  opacity: 75%;
+}
+
+
+/*BEFORE THE GRID*/
+/*Section element, container for the grid and the title above it*/
+.comparison {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/*'p' element, title that appears above the grid*/
+.subtitle {
+  margin-top: 3px;
+  margin-bottom: 18px;
+  color: #555;
+}
+
+
+/*THE GRID*/
+/*Div element,container for the grid*/
+.grid {
+  display: grid;		  /* grid: Generates a block-level grid. inline-grid: Generates an inline-level grid */
+  gap: 16px;              /* space between cards */
+  grid-template-columns: 1fr;   /*default stacked*/
+}
+
+
+/*MEDIA QUERY*/
+/* Large screens: cards side-by-side in a row */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small screens: stack vertically (one column)*/ 
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* CARD STYLING */
+.feature-card {
+  background-image: url('./images/bkground.jpg');
+  background-size: cover;
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 18px;
+  display: grid;
+  gap: 10px;
+}
+/* */
+.feature-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+/* */
+.feature-card p {
+  margin: 0;
+  color: #444;
+  font-size: 10px;
+  line-height: 1.4;
+}
+/* */
+.feature-card ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 15px;
+  color: #333;
+}
+/* */
+.feature-card button {
+  justify-self: start;          /* keeps button from stretching full width */
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #9D7806;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/*HOVER EFFECT*/
+.feature-card button:hover {
+  background-color: #0056b3;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 5px 5px #F6BB09;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
